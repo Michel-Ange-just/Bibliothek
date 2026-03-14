@@ -1,13 +1,13 @@
 # Bibliothek
 
-# 📚 Bibliotheksverwaltungssystem (Java, OOP & Datenstrukturen)
+# Bibliotheksverwaltungssystem (Java, OOP & Datenstrukturen)
 
 Dieses Projekt ist ein einfaches, aber didaktisch wertvolles **Bibliotheksverwaltungssystem**, das in Java entwickelt wurde.  
 Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapselung** und **Polymorphismus** zu üben und gleichzeitig mit **komplexeren Datenstrukturen** zu arbeiten.
 
 ---
 
-## 🎯 Ziele des Projekts
+## Ziele des Projekts
 
 - Verwaltung eines Bibliothekskatalogs
 - Hinzufügen neuer Bücher
@@ -20,7 +20,7 @@ Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapsel
 
 ---
 
-## 🧠 Verwendete Java‑Konzepte
+## Verwendete Java‑Konzepte
 
 ### ✔️ Objektorientierung
 - **Vererbung** (z. B. `Book` → `EBook`, `PrintedBook`)

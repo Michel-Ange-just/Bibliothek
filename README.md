@@ -22,12 +22,12 @@ Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapsel
 
 ## Verwendete Java‑Konzepte
 
-### ✔️ Objektorientierung
+### Objektorientierung
 - **Vererbung** (z. B. `Book` → `EBook`, `PrintedBook`)
 - **Kapselung** (private Felder, Getter/Setter)
 - **Polymorphismus** (Methodenüberschreibung, gemeinsame Interfaces)
 
-### ✔️ Datenstrukturen
+### Datenstrukturen
 - `ArrayList` für den Katalog
 - `HashMap` für ausgeliehene Bücher
 - `HashSet` für eindeutige Benutzer

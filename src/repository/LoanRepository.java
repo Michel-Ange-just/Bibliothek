@@ -10,4 +10,12 @@ public class LoanRepository {
     public LoanRepository() {
         this.loans = new HashMap<>();
     }
+
+    public void addLoan(Loan loan){
+        loans.put(loan.getLoanId(),loan);
+    }
+
+    public Loan removeLoan(Loan loan){
+        return loans.remove(loan.getLoanId());
+    }
 }

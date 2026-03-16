@@ -24,4 +24,5 @@ public class Loan {
     public String getLoanId() {
         return loanId;
     }
+    public Book getBook() {return this.book; }
 }

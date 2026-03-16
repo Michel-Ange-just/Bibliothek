@@ -1,7 +1,24 @@
-<target name="run" depends="compile">
-    <java classname="Main" fork="true">
-        <classpath>
-            <pathelement path="${build}"/>
-        </classpath>
-    </java>
-</target>
+<?xml version="1.0"?>
+<project name="Bibliothek" default="run">
+
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="${build}"/>
+        <javac srcdir="${src}" destdir="${build}" release="21"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="Main" fork="true">
+            <classpath>
+                <pathelement path="${build}"/>
+            </classpath>
+        </java>
+    </target>
+
+</project>

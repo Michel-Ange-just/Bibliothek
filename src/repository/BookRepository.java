@@ -84,4 +84,8 @@ public class BookRepository {
             System.out.println(book.getTitle());
         }
     }
+
+    public Book getBook(String isbn) {
+        return books.get(isbn);
+    }
 }

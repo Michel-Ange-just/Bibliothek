@@ -1,7 +1,6 @@
 package repository;
 
 import model.Loan;
-import model.User;
 
 import java.util.HashMap;
 
@@ -15,7 +14,16 @@ public class LoanRepository {
         loans.put(loan.getLoanId(),loan);
     }
 
-    public Loan removeLoan(Loan loan){
-        return loans.remove(loan.getLoanId());
+    public void removeLoan(Loan loan){
+        loans.remove(loan.getLoanId());
+    }
+
+    public void removeLoan(String loanId){
+        loans.remove(loanId);
+    }
+
+
+    public HashMap<String, Loan> getLoansCopied(){
+        return (HashMap<String, Loan>) loans.clone();
     }
 }

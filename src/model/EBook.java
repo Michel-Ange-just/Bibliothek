@@ -3,8 +3,8 @@ package model;
 public class EBook extends Book {
     Boolean printed;
 
-    public EBook(String isbn, String autor, String title, Integer erscheinungsJahr, String verlag) {
-        super(isbn, autor, title, erscheinungsJahr, verlag);
+    public EBook(String isbn, String autor, String title, Integer erscheinungsJahr, String verlag, Integer anzahl) {
+        super(isbn, autor, title, erscheinungsJahr, verlag,anzahl);
         this.printed = false;
     }
 

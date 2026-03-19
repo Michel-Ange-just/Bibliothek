@@ -70,19 +70,15 @@ public class BookRepository {
     }
 
     public Book findByTitle(String title) throws BookException {
-        for(Book book : books.values()){
-            if(book.getTitle().equals(title)){
-                return book;
-            }
-        }
+        Book book1 =  books.values().stream().filter(book -> book.getTitle().equals(title)).findFirst().orElse(null);
+        if(book1 == null)
+            throw new BookException("This book does not exist");
+        return book1;
 
-        throw new BookException("This book does not exist");
     }
 
     public void printBookList(){
-        for(Book book : books.values()){
-            System.out.println(book.getTitle());
-        }
+        books.values().forEach(System.out::println);
     }
 
     public Book getBook(String isbn) {

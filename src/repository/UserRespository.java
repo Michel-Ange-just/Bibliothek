@@ -25,10 +25,9 @@ public class UserRespository {
     }
 
     public void addUser(String userName) throws UserException {
-        for(User user : users){
-            if(user.getName().equals(userName)){
-                throw new UserException("User exists already");
-            }
+        boolean exists = isUserExists(userName);
+        if(exists){
+            throw new UserException("User already exists");
         }
         users.add(new User(userName));
         System.out.println("new user added");
@@ -49,21 +48,18 @@ public class UserRespository {
     }
 
     public boolean isUserExists(String userName) throws UserException {
-        for(User user : users){
-            if(user.getName().equals(userName)){
-                return true;
-            }
+        User user1 = users.stream().filter(user -> user.getName().equals(userName)).findFirst().orElse(null);
+        if(user1 == null){
+            throw new UserException("The user doesn't exist");
         }
-        return false;
+        return true;
     }
 
     public User findUserByName(String userName) throws UserException {
-        for(User user : users){
-            if(user.getName().equals(userName)){
-                return user;
-            }
+        User user1 = users.stream().filter(user -> user.getName().equals(userName)).findFirst().orElse(null);
+        if(user1 == null){
+            throw new UserException("User not found");
         }
-
-        throw new UserException("The user does not exist");
+        return user1;
     }
 }

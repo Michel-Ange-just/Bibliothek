@@ -119,7 +119,7 @@ public class LibraryService {
                     }
                     break;
                 case 3:
-                    System.out.println("Enter the book name: ");
+                    System.out.println("Enter the book's isbn: ");
                     String book = sc.nextLine();
                     System.out.println("Enter your username: ");
                     String user = sc.nextLine();

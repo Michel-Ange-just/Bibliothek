@@ -2,7 +2,6 @@ package repository;
 import exception.UserException;
 import model.User;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 public class UserRespository {
@@ -20,13 +19,25 @@ public class UserRespository {
         else{
 
             users.add(user);
+            System.out.println("new user added");
             return true;
         }
+    }
+
+    public void addUser(String userName) throws UserException {
+        for(User user : users){
+            if(user.getName().equals(userName)){
+                throw new UserException("User exists already");
+            }
+        }
+        users.add(new User(userName));
+        System.out.println("new user added");
     }
 
     public boolean removeUser(User user) throws UserException {
         if(users.contains(user)){
             users.remove(user);
+            System.out.println("user removed");
             return true;
         }
         throw new UserException("The user don't exitst");
@@ -46,7 +57,7 @@ public class UserRespository {
         return false;
     }
 
-    public User getUser(String userName) throws UserException {
+    public User findUserByName(String userName) throws UserException {
         for(User user : users){
             if(user.getName().equals(userName)){
                 return user;

@@ -31,7 +31,6 @@ Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapsel
 - `ArrayList` für den Katalog
 - `HashMap` für ausgeliehene Bücher
 - `HashSet` für eindeutige Benutzer
-- Optional: `PriorityQueue` für überfällige Bücher
 
 ---
 

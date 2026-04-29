@@ -5,7 +5,7 @@
 Dieses Projekt ist ein einfaches, aber didaktisch wertvolles **Bibliotheksverwaltungssystem**, das in Java entwickelt wurde.  
 Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapselung** und **Polymorphismus** zu üben und gleichzeitig mit **komplexeren Datenstrukturen** zu arbeiten.
 
----
+
 
 ## Ziele des Projekts
 
@@ -18,7 +18,7 @@ Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapsel
   - Überfällige Bücher
   - Anzahl verfügbarer Exemplare
 
----
+
 
 ## Verwendete Java‑Konzepte
 
@@ -32,6 +32,6 @@ Es dient dazu, objektorientierte Programmierkonzepte wie **Vererbung**, **Kapsel
 - `HashMap` für ausgeliehene Bücher
 - `HashSet` für eindeutige Benutzer
 
----
+
 
 
